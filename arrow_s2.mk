@@ -21,16 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from s2 device
 $(call inherit-product, device/leeco/s2/device.mk)
 
-# Inherit some common Pixel Experience stuff.
+# Inherit some common Arrow-OS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_EXCLUDE_LAWNCHAIR := true
+$(call inherit-product, vendor/arrow/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := LeEco
 PRODUCT_DEVICE := s2
 PRODUCT_MANUFACTURER := LeMobile
-PRODUCT_NAME := aosp_s2
+PRODUCT_NAME := arrow_s2
 
 PRODUCT_GMS_CLIENTID_BASE := android-leeco
 
