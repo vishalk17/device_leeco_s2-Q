@@ -476,6 +476,7 @@
 
 	<!-- Button brightness -->
     <bool name="config_button_brightness_support">true</bool>
+    <integer name="config_button_brightness_default">4</integer>
 
     <!-- Hardware keys present on the device, stored as a bit field.
      This integer should equal the sum of the corresponding value for each
@@ -510,6 +511,24 @@
 
     <!-- Whether the device has fingeprint sensor or not -->
     <bool name="config_hasFingerprintSensor">true</bool>
+
+    <!-- Whether the device supports Smart Pixels --> 
+    <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- SysInfo for s2 -->
+    <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <integer name="config_sysCPUTempMultiplier">1000</integer>
+    <integer name="config_sysBatteryTempMultiplier">10</integer>
+
+    <!-- If Smart charging supported by kernel and device sepolicy -->
+    <bool name="config_smartChargingAvailable">true</bool>
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/charging_enabled</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">0</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">1</string>
+
+     <!-- Default state for LiveDisplay -->
+    <bool name="config_liveDisplayAvailable">true</bool>
 
     <!-- Indicate whether to allow the device to suspend when the screen is off
           due to the proximity sensor.  This resource should only be set to true
