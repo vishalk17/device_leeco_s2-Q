@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_s2.mk
+    $(LOCAL_DIR)/rr_s2.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_s2-user \
-    aosp_s2-userdebug \
-    aosp_s2-eng
+    rr_s2-user \
+    rr_s2-userdebug \
+    rr_s2-eng
