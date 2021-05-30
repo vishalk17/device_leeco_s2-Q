@@ -28,6 +28,9 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# RR Wallpapers
+BUILD_RR_WALLPAPERS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := LeEco
 PRODUCT_DEVICE := s2
